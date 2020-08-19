@@ -1,12 +1,18 @@
 snippet for "for autocomplete"
 for(int ${1:i} = 0; $1 < ${2:n}; ++$1){
-	$3
+    $3
+}
+endsnippet
+
+snippet forr "reverse for autocomplete"
+for(int $2=${1:n}-1;${2:i} >= 0; $2--){
+    $3
 }
 endsnippet
 
 snippet while "while autocomplete"
 while($1) {
-	$2
+    $2
 }
 endsnippet
 
@@ -28,6 +34,10 @@ endsnippet
 
 snippet allr "references autocomplete" i
 $1.rbegin(), $1.rend()
+endsnippet
+
+snippet rev "sort autocomplete"
+reverse($1.begin(), $1.end());
 endsnippet
 
 snippet uint "unsigned int autocomplete" i
@@ -58,6 +68,10 @@ snippet PB "push_back autocomplete" i
 push_back($1);
 endsnippet
 
+snippet POB "push_back autocomplete" i
+pop_back();$1
+endsnippet
+
 snippet LB "lower_bound autocomplete" i
 lower_bound($1);
 endsnippet
@@ -70,9 +84,21 @@ snippet max "numeric_limits autocomplete" i
 numeric_limits<$1>::max();
 endsnippet
 
+snippet sz "(int) some.size() autocomplete" i
+int($1.size())$2
+endsnippet
+
+snippet ms "memset autocomplete" i
+memset($1, $2, sizeof($1));
+endsnippet
+
+snippet endl "memset autocomplete" i
+'\n'
+endsnippet
+
 snippet main "main autocomplete"
 auto main() -> int {
-	$1
-	return 0;
+    $1
+    return 0;
 }
 endsnippet
