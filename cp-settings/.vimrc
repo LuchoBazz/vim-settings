@@ -46,6 +46,3 @@ let g:tmpl_author_name = 'Luis Miguel Baez'
 
 call vundle#end()            " required for Vundle
 filetype plugin indent on    " required for Vundle
-
-" cnoreabbrev %y+ copy
-nmap :xyz :%y+
