@@ -7,6 +7,8 @@
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
+* Ejecutar `:PluginInstall!`
+
 ```vim
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
@@ -24,6 +26,7 @@ sudo apt install vim-gtk3
 ```shell
 cd cp-settings
 cp -r VimTemplate ~/.vim/VimTemplate
+cp .vimrc ~/.vimrc
 ```
 
 #### Referencia
