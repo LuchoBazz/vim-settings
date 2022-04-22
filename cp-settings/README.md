@@ -1,4 +1,5 @@
 # Competitive Programming Setting
+
 * Instalar Vim
 * Clonar Vundle
 
@@ -18,3 +19,12 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```shell
 sudo apt install vim-gtk3
 ```
+
+* Para Plugin de Template
+```shell
+cd cp-settings
+cp -r VimTemplate ~/.vim/VimTemplate
+```
+
+#### Referencia
+[marblestation vimrc](https://www.marblestation.com/?p=910)
