@@ -44,5 +44,18 @@ let g:tmpl_search_paths = ['~/.vim/VimTemplate/templates']
 let g:tmpl_author_email = 'es.luismiguelbaez@gmail.com'
 let g:tmpl_author_name = 'Luis Miguel Baez'
 
+Plugin 'mg979/vim-visual-multi'
+
+" Track the engine. Snippets
+Plugin 'SirVer/ultisnips'
+
+" Snippets are separated from the engine. Add this if you want them:
+Plugin 'honza/vim-snippets'
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-w>"
+let g:UltiSnipsJumpBackwardTrigger="<c-q>"
+let g:UltiSnipsListSnippets="<f2>"
+
 call vundle#end()            " required for Vundle
 filetype plugin indent on    " required for Vundle
