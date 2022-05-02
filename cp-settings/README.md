@@ -26,7 +26,19 @@ sudo apt install vim-gtk3
 ```shell
 cd cp-settings
 cp -r VimTemplate ~/.vim/VimTemplate
+cp -r UltiSnips ~/.vim/UltiSnips
 cp .vimrc ~/.vimrc
+```
+
+* Install [cpbooster](https://github.com/searleser97/cpbooster)
+
+- [Get Started - Installation](https://searleser97.github.io/cpbooster/docs/installation)
+
+```shell
+cd cp-settings
+cp cpbooster-config.json ~/cpbooster-config.json
+# Move templates to ~/cpb folder
+mkdir ~/.cpb
 ```
 
 #### Referencia
