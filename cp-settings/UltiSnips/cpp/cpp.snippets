@@ -1,0 +1,43 @@
+snippet sort "sort autocomplete"
+sort($1.begin(), $1.end());
+endsnippet
+
+snippet sortr "sort reverse autocomplete"
+sort($1.rbegin(), $1.rend());
+endsnippet
+
+snippet allv "references autocomplete" i
+$1.begin(), $1.end()
+endsnippet
+
+snippet allr "references autocomplete" i
+$1.rbegin(), $1.rend()
+endsnippet
+
+snippet rev "sort autocomplete"
+reverse($1.begin(), $1.end());
+endsnippet
+
+snippet PB "push_back autocomplete" i
+push_back($1);
+endsnippet
+
+snippet POB "push_back autocomplete" i
+pop_back();$1
+endsnippet
+
+snippet LB "lower_bound autocomplete" i
+lower_bound($1);
+endsnippet
+
+snippet UB "upper_bound autocomplete" i
+upper_bound($1);
+endsnippet
+
+snippet max "numeric_limits autocomplete" i
+numeric_limits<$1>::max();
+endsnippet
+
+snippet ms "memset autocomplete" i
+memset($1, $2, sizeof($1));
+endsnippet
