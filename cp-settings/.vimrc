@@ -59,3 +59,14 @@ let g:UltiSnipsListSnippets="<f2>"
 
 call vundle#end()            " required for Vundle
 filetype plugin indent on    " required for Vundle
+
+" Change Relative Numbers to NoRelativeNumber
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set norelativenumber
+  else
+    set relativenumber
+  endif
+endfunc
+
+nmap nn :call NumberToggle()<CR>
