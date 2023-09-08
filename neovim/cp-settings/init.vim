@@ -44,7 +44,12 @@ function! NumberToggle()
   endif
 endfunc
 
+function! Formatter()
+  silent !clang-format -style=file -i %:p
+endfunction
+
 nmap nn :call NumberToggle()<CR>
+nmap ff :call Formatter()<CR>
 
 command! -nargs=0 FormatClang execute 'silent !clang-format -style=file -i ' . expand('%:p')
 command! -nargs=0 Format execute 'FormatClang'
