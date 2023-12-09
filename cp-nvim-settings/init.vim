@@ -7,9 +7,9 @@ set number
 set relativenumber
 set expandtab
 
-" 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
+" 1 tab == 2 spaces
+set shiftwidth=2
+set tabstop=2
 
 " Smart way to move between windows
 map <M-Down> <C-W>j
@@ -44,8 +44,12 @@ function! NumberToggle()
   endif
 endfunc
 
+function! Formatter()
+  silent !clang-format -style=file -i %:p
+endfunction
+
 nmap nn :call NumberToggle()<CR>
+nmap ff :call Formatter()<CR>
 
 command! -nargs=0 FormatClang execute 'silent !clang-format -style=file -i ' . expand('%:p')
 command! -nargs=0 Format execute 'FormatClang'
-
